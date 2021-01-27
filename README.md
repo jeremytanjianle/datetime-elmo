@@ -1,11 +1,22 @@
 # Natural Date String Parser
 A sequence-to-sequence model to parse natural date strings into machine parsable date strings.
+```
+-
+Input sentence: 28 September 97 - 21 May 98
+Decoded sentence: 28/09/1997 - 21/05/1998
 
-| Input                | Output                    |
-|----------------------|---------------------------|
-| 1st of March 2019    | 01/03/2019 eos            |
-| 15 Febroory 2008     | 15/02/2008 eos            |
-| 19 Sept - 27 Sept 99 | 19/09/1999 - 27/09/99 eos |
+-
+Input sentence: 03-07-2004
+Decoded sentence: 07/03/2004
+
+-
+Input sentence: 03 September 13
+Decoded sentence: 03/09/2013
+
+-
+Input sentence: 23 aug 18 - 18 jul 19
+Decoded sentence: 23/08/2018 - 18/07/2019
+```
 
 ### Usage
 1. Swith to new environment and install requirements:  
